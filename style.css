@@ -194,6 +194,15 @@ h3{
     .lower-text-box{
         
         margin-top: -5%;
-        
+        transition: all .4s ease;
+        cursor: pointer;
+    }
+    .lower-text-box:hover{
+        background-color: #33397a;
+    }
+    .lower-box{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
     }
 }
