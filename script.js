@@ -27,8 +27,8 @@ const updateDisplay = async (timeframe) => {
     if (data) {
         data.forEach((item, index) => {
             current[index].innerText = `${item.timeframes[timeframe].current}hrs`;
-            prev[index].innerText = timeframe === 'daily' ? 'Yesterday' : `Last ${mapTimeframeLabel(timeframe)}`; // Conditional to remove "Last" for yesterday
-            prevTime[index].innerText = `${item.timeframes[timeframe].previous} - hrs`;
+            prev[index].innerText = timeframe === 'daily' ? 'Yesterday -' : `Last ${mapTimeframeLabel(timeframe)} -`; // Conditional to remove "Last" for yesterday
+            prevTime[index].innerText = `${item.timeframes[timeframe].previous}hrs`;
         });
 
         // Update the active button's color
